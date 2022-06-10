@@ -1,14 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;;
+}
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid grey 3px;
-    padding: 1.6% 8% 1.6% 8%;
+    border-bottom: solid #f0f0f0 3px;
+    padding: 1.14% 6.5% 1% 6.5%;
 }
 header .deezer {
     height: 30px;
 }
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 header a {
     text-decoration: none;
     color: black;
+}
+header .headerlinks {
+    color: #32323d;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 20px 0 20px;
+}
+header .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .connexion {
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 23px;
+    border: 2px solid;
+    border-radius: 35px;
+    background-color: rgba(0,0,0,0);
+    color: #2d96c8;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    outline: 0 none;
+}
+header .connexion:hover{
+    border-color: #144358;
+    color: #144358;
+    transition: color 0.15s, border-color 0.15s;
+}
+header .inscription {
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 23px;
+    border: 2px solid;
+    border-radius: 35px;
+    background-color: #2d96c8;
+    border-color: #2d96c8;
+    color: white;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    outline: 0 none;
+}
+header .inscription:hover{
+    background-color: #144358;;
+    transition: background-color 0.15s;
+}
+
+main .freemonths {
+    margin: 0 4%;
+    display: flex;
+    height: 500px;
+    background-image: url("../img/hero.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 800px;
+}
+main .freemonths .leftfreemonths {
+    padding-left: 12%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .freemonths .leftfreemonths h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+main .freemonths .leftfreemonths p {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ee5465;
+}
+main .freemonths a {
+    text-decoration: none;
+}
+main .freemonths .buttonsfreemonths {
+    display: flex;
+    margin-top: 50px;
+}
+main .freemonths .deezerpaid {
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 50px;
+    border: 2px solid;
+    border-radius: 35px;
+    background-color: #ee5465;
+    border-color: #ee5465;
+    color: white;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+main .freemonths .deezerfree1 {
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 45px;
+    border: 2px solid;
+    border-radius: 35px;
+    background-color: white;
+    color: black;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+main .about {
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 70px 100px 40px 18%;
+}
+main .about .nonmaisallo {
+    width: 350px;
+    margin-right: 40px;
+}
+main .about .rightabout {
+    display: flex;
+    align-items: center;
+}
+main .about .rightabout .textleftabout {
+    margin-right: 100px;
+}
+main .about h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+main .about h3 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+}
+main .about p {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 30px 0;
+    line-height: 25px;
 }
