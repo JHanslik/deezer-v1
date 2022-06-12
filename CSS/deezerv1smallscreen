@@ -13,17 +13,13 @@ header {
 header .deezer {
     height: 30px;
 }
-header nav .fullscreennav{
+header nav {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-header .navbar .hamburger {
-    display: none;
-    width: 40px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
+header nav .hamburger {
+    display: contents;
 }
 header a {
     text-decoration: none;
@@ -49,6 +45,7 @@ header .connexion {
     border-radius: 35px;
     background-color: rgba(0,0,0,0);
     color: #2d96c8;
+    display: inline-block;
     position: relative;
     text-align: center;
     cursor: pointer;
@@ -83,7 +80,7 @@ header .inscription:hover{
 
 main .freemonths {
     margin: 0 4%;
-    display: flex;
+    display: ;
     height: auto;
     justify-content: space-between;
     /* background-image: url("../img/hero.png");
@@ -96,7 +93,7 @@ main .freemonths .deezhero {
 }
 main .freemonths .leftfreemonths {
     padding-left: 12%;
-    /* width: 45%; */
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,7 +114,7 @@ main .freemonths .buttonsfreemonths {
     display: flex;
     margin-top: 50px;
 }
-.deezerpaid1 {
+.deezerpaid {
     margin-left: 15px;
     font-size: 15px;
     font-weight: 700;
@@ -132,7 +129,7 @@ main .freemonths .buttonsfreemonths {
     text-align: center;
     cursor: pointer;
 }
-.deezerpaid1:hover {
+.deezerpaid:hover {
     background-color: #a83b48;
     border-color: #a83b48;
     transition-duration: 0.15s;
@@ -141,7 +138,7 @@ main .freemonths .deezerfree1 {
     margin-left: 15px;
     font-size: 15px;
     font-weight: 700;
-    padding: 15px 50px;
+    padding: 15px 45px;
     border: 2px solid;
     border-radius: 35px;
     background-color: rgba(0,0,0,0);
@@ -193,20 +190,19 @@ main .about p {
 main .withyou {
     background-color: #ee5465;
     display: flex;
-    align-items: center; 
+    align-items: center;
+    height: 250px;
+    
 }
-main .withyou .imgwithyou1 {
+main .withyou .imgwithyou {
     display: flex;
     width: 50%;
     align-items: center;
     padding-left: 15%;
 }
-main .withyou .imgwithyou1 img {
+main .withyou .imgwithyou img {
     width: 50px;
     padding: 10px;
-}
-main .withyou .imgwithyou2 {
-    display: none;
 }
 main .withyou .textwithyou {
     width: 50%;
@@ -248,9 +244,6 @@ main .offers .flechebas{
 }
 main .offers .flechebas::before {
     content: '▼';
-}
-main .offers .bestmobile {
-    display: none;
 }
 main .offers .offersboxs {
     display: flex;
@@ -300,27 +293,7 @@ main .offers .offersboxs .cross {
 main .offers .offersboxs .cross::before {
     content: 'X  ';
 }
-.deezerpaid2 {
-    margin-left: 15px;
-    font-size: 15px;
-    font-weight: 700;
-    padding: 15px 50px;
-    border: 2px solid;
-    border-radius: 35px;
-    background-color: #ee5465;
-    border-color: #ee5465;
-    color: white;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    cursor: pointer;
-}
-.deezerpaid2:hover {
-    background-color: #a83b48;
-    border-color: #a83b48;
-    transition-duration: 0.15s;
-}
-main .offers .offersboxs .deezerpaid2 {
+main .offers .offersboxs .deezerpaid {
     margin: 20px 0 20px 0;
 }
 main .offers .offersboxs .whitelinks {
@@ -343,6 +316,7 @@ main .offers .offersboxs .deezerfreebox {
     justify-content: center;
     margin-right: 10px;
     box-shadow: 2px 2px 12px #c7d3d9;
+    /* padding: 180px 0 50px 0; */
     margin: 0 10px 0 0;
 }
 main .offers .offersboxs .deezerpremium {
@@ -350,14 +324,15 @@ main .offers .offersboxs .deezerpremium {
     flex-direction: column;
     align-items: center;
     background-color: #2d96c8;
+    /* padding: 180px 0 50px 0; */
     margin: 0 10px 0 0;
-    box-shadow: 2px 2px 12px #c7d3d9;
+    box-shadow: 1px 1px 12px #c7d3d9;
 }
 main .offers .offersboxs .deezerfamille {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 2px 2px 12px #c7d3d9;
+    box-shadow: 1px 1px 12px #c7d3d9;
 }
 main .offers .offersboxs .deezerfree2 {
     margin:0 0 20px 0;
@@ -447,9 +422,6 @@ footer {
     background-color: black;
     padding-bottom: 100px;
 }
-footer .deezerfootermobile {
-    display: none;
-}
 footer .app {
     padding: 100px 0 50px 0;
     text-align: center;
@@ -502,224 +474,4 @@ footer #selectionlangue {
     background-color: black;
     color: white;
     border-color: rgba(0,0,0,0);
-}
-
-
-@media (max-width: 768px) {
-    header {
-        display: block;
-    }
-    header .navbar .hamburger {
-        display: none;
-        width: 40px;
-        position: absolute;
-        top: 5px;
-        right: 5px;
-    }
-    header .logo {
-        width: 100%;
-        text-align: center;
-    }
-    header nav .fullscreennav {
-        display: none;
-    }
-    header nav img {
-        display: content;
-    }
-    main .freemonths {
-        display: block;
-    }
-    main .freemonths .leftfreemonths {
-        display: block;
-        width: 100%;
-        padding: 0;
-        text-align: center;
-    }
-    main .freemonths .leftfreemonths h2 {
-        font-size: 30px;
-        margin: 50px 0 10px 0;
-    }
-    main .freemonths .leftfreemonths p {
-        font-size: 20px;
-    }
-    main .freemonths .buttonsfreemonths {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-top: 15px;
-    }
-    main .freemonths .deezerpaid1 {
-        display: block;
-        white-space: nowrap;
-        text-align: center;
-        padding: 15px 120px;
-        width: 100%;
-        margin: 15px 0 10px 0;
-    }
-    main .freemonths .deezerfree1 {
-        display: block;
-        white-space: nowrap;
-        text-align: center;
-        padding: 15px 120px;
-        width: 100%;
-        margin: 15px 0 10px 0;
-    }
-    main .about {
-        display: block;
-        text-align: center;
-    }
-    main .nonmaisallo {
-        display: none;
-    }
-    main .freemonths {
-        padding: 0;
-    }
-    main .freemonths .deezhero {
-        width: 100%;
-    }
-
-    main .about {
-        display: block;
-        padding: 0;
-    }
-    main .about .rightabout {
-        text-align: left;
-        margin: 0 20px 60px 20px ;
-    }
-    main .rightabout h2 {
-        margin: 30px 0 20px 0;
-    }
-    main .about .rightabout p {
-        margin: 20px 0;
-    }
-    main .about .rightabout .textleftabout {
-        display: block;
-        margin: 0 0 0 0;
-    }
-    main .about .rightabout {
-        display: block;
-    }
-
-    main .withyou {
-        display: block;
-        text-align: center;
-    }
-    main .withyou .imgwithyou1 {
-        display: none;
-    }
-    main .withyou .textwithyou {
-        width: 100%;
-        padding-right: 0%;
-        color: white;
-    }
-    main .withyou .textwithyou h2 {
-        font-size: 35px;
-        font-weight: 700;
-        padding-top: 20px;
-        margin: 20px 0 20px 0;
-    }
-    main .withyou .textwithyou p {
-        font-size: 17px;
-        line-height: 24px;
-        margin-bottom: 25px;
-    }
-    main .withyou .imgwithyou2 {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        padding: 20px 0 20px 0%;
-    }
-    main .withyou .imgwithyou2 img {
-        width: 50px;
-    }
-
-    main .offers {
-        display: block;
-    }
-    main .offers h2 {
-        font-size: 30px;
-        padding: 30px 0 30px 0;
-    }
-    main .offers .offersboxs {
-        display: block;
-        margin: 10px 50px 10px 50px;
-    }
-    main .offers .bestfull {
-        display: none;
-    }
-    main .offers .bestmobile {
-        display: block;
-    }
-    main .offers .bestmobile .flechebas {
-        text-align: center;
-    }
-    main .offers .bestmobile ul {
-        padding: 0;
-    }
-    main .offers .offersboxs .deezerfreebox {
-        margin-right: 0;
-    }
-    main .offers .offersboxs .deezerpremium {
-        margin-bottom: 50px;
-        margin-right: 0;
-    }
-    main .offers .disclaimer {
-        padding: 0 10% 20px 10%;
-    }
-
-    main .options {
-        display: block;
-    }
-    main .options h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-    main .options p {
-        display: none;
-    }
-    main .options .abonnementannuel {
-        display: block;
-        text-align: left;
-    }
-    main .options .deezerhifi {
-        display: block;
-        text-align: center;
-    }
-    main .options .deezeretudiant {
-        display: block;
-        text-align: center;
-    }
-
-    footer {
-        display: block;
-    }   
-    footer .footerlists {
-        display: block;
-        padding-left: 20px;
-    }
-    footer .footerlists .titrelistefooter {
-        margin-top: 50px;
-    }
-    footer .endpage {
-        display: block;
-        text-align: center;
-    }
-     footer .deezerfooterfull {
-        display: none;
-    }
-    footer .deezerfootermobile {
-        display: block;
-        margin-bottom: 60px;
-    }
-    footer .endpage .socials {
-        justify-content: center;
-        margin-bottom: 60px;
-    }
-    footer .socials2 {
-        padding-right: 5px;
-    }
-    footer .endpage .legal {
-        justify-content: center;
-    }
 }

@@ -7,29 +7,33 @@
         <title>deezerv1</title>
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/deezerv1.css">
+        <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="CSS/deezerv1smallscreen"> -->
     </head>
     <body>
         <header>
-            <section>
+            <section class="logo">
                 <a href="https://www.deezer.com/">
                     <img src="img/logo.png" alt="Logo Deezer" class="deezer">
                 </a>
             </section>
             <section class="navbar">
                 <nav>
-                    <article>                        
-                        <a href="https://www.deezer.com/fr/download/?direct_dl&utm_source=device&utm_campaign=mkg-desktop_app&utm_medium=player-obj_download&utm_content=feature-desktop_app&utm_source=adwords&utm_medium=search&utm_campaign=acq_FR_sea-dsa_web_search_perf_tnb-directsub&utm_content=dsa_premium_tnb_dsa-allsite" class="headerlinks">Télécharger</a>
-                        <a href="https://www.deezer.com/fr/offers?utm_source=adwords&utm_medium=search&utm_campaign=acq_FR_sea-dsa_web_search_perf_tnb-directsub&utm_content=dsa_premium_tnb_dsa-allsite" class="headerlinks">Offres</a>
-                    </article>
-                    <article class="buttons">                        
-                        <a href="https://www.deezer.com/fr/login?utm_source=adwords&utm_medium=search&utm_campaign=acq_FR_sea-dsa_web_search_perf_tnb-directsub&utm_content=dsa_premium_tnb_dsa-allsite">
-                            <button type="button" class="connexion">Connexion</button>
-                        </a>
-                        <a href="https://www.deezer.com/fr/register?utm_source=adwords&utm_medium=search&utm_campaign=acq_FR_sea-dsa_web_search_perf_tnb-directsub&utm_content=dsa_premium_tnb_dsa-allsite">
-                            <button type="button" class="inscription">Insciption</button>
-                        </a>                    
-                    </article>
+                    <div class="fullscreennav">
+                        <article>                        
+                            <a href="https://www.deezer.com/fr/download/?direct_dl&utm_source=device&utm_campaign=mkg-desktop_app&utm_medium=player-obj_download&utm_content=feature-desktop_app&utm_source=adwords&utm_medium=search&utm_campaign=acq_FR_sea-dsa_web_search_perf_tnb-directsub&utm_content=dsa_premium_tnb_dsa-allsite" class="headerlinks">Télécharger</a>
+                            <a href="https://www.deezer.com/fr/offers?utm_source=adwords&utm_medium=search&utm_campaign=acq_FR_sea-dsa_web_search_perf_tnb-directsub&utm_content=dsa_premium_tnb_dsa-allsite" class="headerlinks">Offres</a>
+                        </article>
+                        <article class="buttons">                        
+                            <a href="https://www.deezer.com/fr/login?utm_source=adwords&utm_medium=search&utm_campaign=acq_FR_sea-dsa_web_search_perf_tnb-directsub&utm_content=dsa_premium_tnb_dsa-allsite">
+                                <button type="button" class="connexion">Connexion</button>
+                            </a>
+                            <a href="https://www.deezer.com/fr/register?utm_source=adwords&utm_medium=search&utm_campaign=acq_FR_sea-dsa_web_search_perf_tnb-directsub&utm_content=dsa_premium_tnb_dsa-allsite">
+                                <button type="button" class="inscription">Insciption</button>
+                            </a>                    
+                        </article>
+                    </div>
                 </nav>
+                <img src="img/Hamburger_icon.svg.png" alt="hamburger menu" class="hamburger">
             </section>
         </header>
 
@@ -37,10 +41,10 @@
             <section class="freemonths">
                 <article class="leftfreemonths">
                     <h2>Vos émotions méritent </br>d'avoir leur musique.</h2>
-                    <p>Profitez de 3 mois offerts pour essayer </br> Deezer Premium*</p> 
+                    <p>Profitez de 3 mois offerts pour essayer Deezer Premium*</p> 
                     <div class="buttonsfreemonths">
                         <a href="https://www.deezer.com/payment/go.php?id=1000001&utm_source=adwords&utm_campaign=acq_FR_sea-dsa_web_search_perf_tnb-directsub&utm_medium=search&utm_content=dsa_premium_tnb_dsa-allsite&rg=1&origin=offers-page-deezer-premium">
-                            <button type="button" class="deezerpaid">Deezer Premium</button>
+                            <button type="button" class="deezerpaid1">Deezer Premium</button>
                         </a>
                         <a href="https://www.deezer.com/payment/go.php?id=1000006&utm_source=adwords&utm_campaign=acq_FR_sea-dsa_web_search_perf_tnb-directsub&utm_medium=search&utm_content=dsa_premium_tnb_dsa-allsite&rg=1&origin=offers-page-deezer-family">
                             <button type="button" class="deezerfree1">Deezer Gratuit</button>
@@ -69,7 +73,7 @@
                 </article>
             </section>
             <section class="withyou">
-                <article class="imgwithyou">
+                <article class="imgwithyou1">
                     <img src="img/Laptop.png" alt="Laptop">
                     <img src="img/Smartphone-tablet.png" alt="Smartphone et Tablette">
                     <img src="img/smartwatch.png" alt="Smartwatch">
@@ -82,14 +86,25 @@
                     <h2>Toujours avec vous</h2>
                     <p>De votre footing matinal jusqu'au dîner du soir, votre musique vous suit partout avec Deezer Premium. Disponible tout le temps, sur tous vos appareils, même sans WeFi ni 4G.</p>
                 </article>
+                <article class="imgwithyou2">
+                    <img src="img/Laptop.png" alt="Laptop">
+                    <img src="img/Smartphone-tablet.png" alt="Smartphone et Tablette">
+                    <img src="img/smartwatch.png" alt="Smartwatch">
+                    <img src="img/speaker.png" alt="Enceintes">
+                    <img src="img/assistant.png" alt="assistant virtuels">
+                    <img src="img/tv.png" alt="Tv">
+                    <img src="img/car.png" alt="Voiture">
+                </article>
             </section>
 
             <section class="offers">
                 <h2>Profitez de votre musique</h2>
-                <p class="best">RECOMMANDÉ</p>
-                <ul>
-                    <li class="flechebas"></li>
-                </ul>
+                <div class="bestfull">
+                    <p class="best">RECOMMANDÉ</p>
+                    <ul>
+                        <li class="flechebas"></li>
+                    </ul>
+                </div>
                 <article class="offersboxs">
                     <div class="deezerfreebox">
                         <h3>Deezer Gratuit</h3>
@@ -108,6 +123,12 @@
                         </a>
                         <a href="" class="bluelinks info" >Plus d'infos</a>
                     </div>
+                    <div class="bestmobile">
+                        <p class="best">RECOMMANDÉ</p>
+                        <ul>
+                            <li class="flechebas"></li>
+                        </ul>
+                    </div>
                     <div class="deezerpremium">
                         <h3>Deezer Premium</h3>
                         <h4>9,99 €</h4>
@@ -121,7 +142,7 @@
                         </ul>
                         <a href="" class="whitelinks">3 mois offerts</a>
                         <a href="">
-                            <button type="button" class="deezerpaid">J'en profite</button>
+                            <button type="button" class="deezerpaid2">J'en profite</button>
                         </a>
                         <a href="" class="whitelinks info" >Plus d'infos</a>
                     </div>
@@ -138,7 +159,7 @@
                         </ul>
                         <a href="" class="bluelinks">1 mois offerts</a>
                         <a href="">
-                            <button type="button" class="deezerpaid">J'en profite</button>
+                            <button type="button" class="deezerpaid2">J'en profite</button>
                         </a>
                         <a href="" class="bluelinks info" >Plus d'infos</a>
                     </div>
@@ -273,6 +294,11 @@
             </section>
 
             <section class="endpage">
+                <article class="deezerfootermobile">
+                    <a href="https://www.deezer.com/fr/?utm_source=adwords&utm_medium=search&utm_campaign=acq_FR_sea-dsa_web_search_perf_tnb-directsub&utm_content=dsa_premium_tnb_dsa-allsite">
+                        <img src="img/logoblanc.png" alt="Deezer" class="deezerfooter">
+                    </a>
+                </article>
                 <ul class="socials">
                     <li>
                         <a href="https://www.facebook.com/deezerfr" class="socials2">
@@ -295,7 +321,7 @@
                         </a>
                     </li>
                 </ul>
-                <article>
+                <article class="deezerfooterfull">
                     <a href="https://www.deezer.com/fr/?utm_source=adwords&utm_medium=search&utm_campaign=acq_FR_sea-dsa_web_search_perf_tnb-directsub&utm_content=dsa_premium_tnb_dsa-allsite">
                         <img src="img/logoblanc.png" alt="Deezer" class="deezerfooter">
                     </a>
