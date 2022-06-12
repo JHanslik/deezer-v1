@@ -2,6 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -69,8 +70,9 @@ header .inscription {
     outline: 0 none;
 }
 header .inscription:hover{
-    background-color: #144358;;
-    transition: background-color 0.15s;
+    background-color: #144358;
+    border-color: #144358;
+    transition: background-color 0.15s, border-color 0.15s;
 }
 
 main .freemonths {
@@ -105,7 +107,7 @@ main .freemonths .buttonsfreemonths {
     display: flex;
     margin-top: 50px;
 }
-main .freemonths .deezerpaid {
+.deezerpaid {
     margin-left: 15px;
     font-size: 15px;
     font-weight: 700;
@@ -120,6 +122,11 @@ main .freemonths .deezerpaid {
     text-align: center;
     cursor: pointer;
 }
+.deezerpaid:hover {
+    background-color: #a83b48;
+    border-color: #a83b48;
+    transition-duration: 0.15s;
+}
 main .freemonths .deezerfree1 {
     margin-left: 15px;
     font-size: 15px;
@@ -127,11 +134,16 @@ main .freemonths .deezerfree1 {
     padding: 15px 45px;
     border: 2px solid;
     border-radius: 35px;
-    background-color: white;
+    background-color: rgba(0,0,0,0);
     color: black;
     position: relative;
     text-align: center;
     cursor: pointer;
+}
+main .freemonths .deezerfree1:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.15s;
 }
 
 main .about {
@@ -140,7 +152,7 @@ main .about {
     padding: 70px 100px 40px 18%;
 }
 main .about .nonmaisallo {
-    width: 350px;
+    width: 300px;
     margin-right: 40px;
 }
 main .about .rightabout {
@@ -149,20 +161,194 @@ main .about .rightabout {
 }
 main .about .rightabout .textleftabout {
     margin-right: 100px;
+    margin-bottom: 95px;
 }
 main .about h2 {
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 700;
     margin-bottom: 60px;
 }
 main .about h3 {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 40px;
 }
 main .about p {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
     margin: 30px 0;
     line-height: 25px;
+}
+
+main .withyou {
+    background-color: #ee5465;
+    display: flex;
+    align-items: center;
+    height: 250px;
+    
+}
+main .withyou .imgwithyou {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    padding-left: 15%;
+}
+main .withyou .imgwithyou img {
+    width: 50px;
+    padding: 10px;
+}
+main .withyou .textwithyou {
+    width: 50%;
+    padding-right: 15%;
+    color: white;
+}
+main .withyou .textwithyou h2 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+main .withyou .textwithyou p {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+main .offers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+main .offers h2 {
+    padding-top: 125px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+main .offers .best {
+    text-align: center;
+    font-size: 13px;
+    color: #8e8e93;
+    margin-top: 60px;
+}
+main .offers .flechebas{
+    text-align: center;
+    color: #2d96c8;
+    margin: 10px 0 10px 0;
+}
+main .offers .flechebas::before {
+    content: '▼';
+}
+main .offers .offersboxs {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 100px 0 ;
+}
+main .offers .offersboxs h3 {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 50px 50px 50px 50px;
+}
+main .offers .offersboxs h4 {
+    font-size: 30px;
+    font-weight: 700;
+}
+main .offers .offersboxs h4 a {
+    text-decoration: none;
+}
+main .offers .offersboxs p {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+main .offers .offersboxs ul {
+    padding: 50px 0 50px 0;
+}
+main .offers .offersboxs li {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 35px;
+    text-align: left;
+}
+main .offers .offersboxs .check {
+    color: #9c9c9c;
+}
+main .offers .offersboxs .deezerpremium .check {
+    color: white;
+}
+main .offers .offersboxs .check:before {
+    content: '✓   ';
+}
+main .offers .offersboxs .cross {
+    color: #cfcfcf;
+    font-weight: 400;
+}
+main .offers .offersboxs .cross::before {
+    content: 'X  ';
+}
+main .offers .offersboxs .deezerpaid {
+    margin: 20px 0 20px 0;
+}
+main .offers .offersboxs .whitelinks {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+main .offers .offersboxs .bluelinks {
+    color: #2d96c8;
+    text-decoration: none;
+    font-weight: 600;
+}
+main .offers .offersboxs .info {
+    margin-bottom: 60px;
+}
+main .offers .offersboxs .deezerfreebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    box-shadow: 2px 2px 12px #c7d3d9;
+    /* padding: 180px 0 50px 0; */
+    margin: 0 10px 0 0;
+}
+main .offers .offersboxs .deezerpremium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d96c8;
+    /* padding: 180px 0 50px 0; */
+    margin: 0 10px 0 0;
+    box-shadow: 1px 1px 12px #c7d3d9;
+}
+main .offers .offersboxs .deezerfamille {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 12px #c7d3d9;
+}
+main .offers .offersboxs .deezerfree2 {
+    margin:0 0 20px 0;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 50px;
+    border: 2px solid;
+    border-radius: 35px;
+    background-color: #8e8e93;
+    border-color: #8e8e93;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+main .offers .offersboxs .deezerfree2:hover {
+    background-color: #5a5a5d;
+    border-color: #5a5a5d;
+    transition-duration: 0.15s;
+}
+main .offers .disclaimer {
+    color: #a7a7b1;
+    padding: 0 20% 20px 20%;
+    font-size: 11px;
+    text-align: center;
 }
