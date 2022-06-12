@@ -194,6 +194,7 @@ main .withyou {
     background-color: #ee5465;
     display: flex;
     align-items: center; 
+    padding: 50px 0 50px 0;
 }
 main .withyou .imgwithyou1 {
     display: flex;
@@ -627,6 +628,7 @@ footer #selectionlangue {
     main .withyou .imgwithyou2 {
         display: flex;
         width: 100%;
+        justify-content: center;
         align-items: center;
         padding: 20px 0 20px 0%;
     }
