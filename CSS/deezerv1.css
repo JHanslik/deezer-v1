@@ -352,3 +352,61 @@ main .offers .disclaimer {
     font-size: 11px;
     text-align: center;
 }
+
+main .options {
+}
+main .options .abonnementannuel {
+    padding: 35px 13% 25px 13%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+}
+main .options .deezerhifi {
+    padding: 35px 13% 25px 13%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+main .options .deezeretudiant {
+    padding: 35px 13% 25px 13%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+main .options h2 {
+    font-size: 30px;
+    font-weight: 600;
+
+}
+main .options h2 span {
+    color: #ee5465;
+}
+main .options p {
+    font-size: 20px;
+    padding: 10px 0 5px 0;
+}
+main .options a {
+    text-decoration: none;
+    color: #2d96c8;
+    font-weight: 600;
+}
+main .options button {
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px 60px;
+    border: 2px solid;
+    border-radius: 35px;
+    background-color: rgba(0,0,0,0);
+    color: black;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+main .options button:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.15s;
+}
