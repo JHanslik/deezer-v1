@@ -79,10 +79,10 @@ main .freemonths {
     margin: 0 4%;
     display: flex;
     height: 500px;
-    background-image: url("../img/hero.png");
+    /* background-image: url("../img/hero.png");
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: 800px;
+    background-size: 800px; */
 }
 main .freemonths .leftfreemonths {
     padding-left: 12%;
@@ -409,4 +409,62 @@ main .options button:hover {
     background-color: black;
     color: white;
     transition-duration: 0.15s;
+}
+
+footer {
+    background-color: black;
+    padding-bottom: 100px;
+}
+footer .app {
+    padding: 100px 0 50px 0;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer .footerlists {
+    display: flex;
+    justify-content: space-around;
+}
+footer .footerlists .titrelistefooter p {
+    color: #575763;
+    font-weight: 600;
+    line-height: 60px;
+} 
+footer .footerlists .itemlistfooter {
+    line-height: 45px;
+}
+footer .endpage {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+footer .endpage .socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+footer .endpage .socials2 {
+    padding-right: 20px;
+}
+footer .endpage .socials img {
+    width: 30px;
+}
+footer .deezerfooter {
+    width: 200px;
+}
+footer .legal {
+    color: #5a5a5d;
+    display: flex;
+    align-items: center;
+}
+footer .copyright {
+    text-align: center;
+    font-weight: 500;
+}
+footer #selectionlangue {
+    background-color: black;
+    color: white;
+    border-color: rgba(0,0,0,0);
 }
